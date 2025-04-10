@@ -3,7 +3,6 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   return (
-    <div className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4">
         <div className="flex flex-row items-center justify-between">
           <div className="cursor-pointer">
@@ -23,7 +22,6 @@ const Navbar = () => {
           </nav>
         </div>
       </div>
-    </div>
   );
 };
 
