@@ -12,7 +12,7 @@ const Navbar = () => {
   const closeMenu = () => {
     setMenu(false);
   };
-
+  
   return (
     <div className="fixed w-full z-10 text-white bg-backgroundColor">
       <div className="container mx-auto px-4 py-4">
@@ -76,13 +76,8 @@ const Navbar = () => {
               Contact Us
             </button>
           </div>
-
-          <div className="lg:hidden z-20" onClick={handleChange}>
-            {menu ? <AiOutlineClose size={28} /> : <AiOutlineMenu size={28} />}
-          </div>
         </div>
 
-        {menu && (
           <div className="lg:hidden flex flex-col bg-backgroundColor px-4 py-6 space-y-4 text-lg font-medium">
             <Link
               to="home"
@@ -138,7 +133,13 @@ const Navbar = () => {
               Contact Us
             </button>
           </div>
-        )}
+           <div className="lg.hidden flex item-center">
+          {menu ? (
+            <AiOutlineClose size={28} onClick={handleChange}/> 
+          ): (
+            <AiOutlineMenu size={28} onClick={handleChange} />
+          )}
+          </div>
       </div>
     </div>
   );
