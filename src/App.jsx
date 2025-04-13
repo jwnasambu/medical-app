@@ -5,6 +5,11 @@ const App = () => {
   return (
     <>
       <Navbar />
+      <main>
+        <div id="home">
+           <Home />
+        </div>
+      </main>
     </>
   );
 };
