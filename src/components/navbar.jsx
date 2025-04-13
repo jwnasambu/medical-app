@@ -76,13 +76,8 @@ const Navbar = () => {
               Contact Us
             </button>
           </div>
-
-          <div className="lg:hidden z-20" onClick={handleChange}>
-            {menu ? <AiOutlineClose size={28} /> : <AiOutlineMenu size={28} />}
-          </div>
         </div>
-
-        {menu && (
+        
           <div className="lg:hidden flex flex-col bg-backgroundColor px-4 py-6 space-y-4 text-lg font-medium">
             <Link
               to="home"
@@ -137,8 +132,14 @@ const Navbar = () => {
             <button className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out">
               Contact Us
             </button>
+        </div>
+        <div className="lg:hidden z-20" onClick={handleChange}>
+          {menu ? (
+            <AiOutlineClose /> 
+          ) : (
+            <AiOutlineMenu />
+          )}
           </div>
-        )}
       </div>
     </div>
   );
