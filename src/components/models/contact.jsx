@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Contact = () => {
+const Contact = ({closeForm}) => {
     return (
-        <div>
-            <div>
+        <div className='fixed inset-0' flex items-center justify-center bg-black bg-opacity>
+            <div className=' popup-form absolute wt-12 text-black'>
                 <form className="w-80 md:w-96 space-y-5 bg-white p-5 rounded-xt">
-                    <h1>Book Now</h1>
+                    <h1 className='text-4xl font-semibold text-center'>Book Now</h1>
                     <div className="flex flex-col">
                         <input
                             type="text"

@@ -4,6 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
+  const [showForm, setShowForm] = useState(false);
 
   const handleChange = () => {
     setMenu(!menu);
@@ -12,6 +13,15 @@ const Navbar = () => {
   const closeMenu = () => {
     setMenu(false);
   };
+
+  const openForm = () => {
+    setShowForm(true);
+    setMenu(false);
+  }
+
+  const closeForm = () => {
+    setShowForm(false);
+  }
   
   return (
     <div className="fixed w-full z-10 text-white bg-backgroundColor">
@@ -72,11 +82,16 @@ const Navbar = () => {
           </nav>
 
           <div className="hidden lg:flex">
-            <button className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out">
-              Contact Us
-            </button>
-          </div>
+  <button
+    onClick={openForm}
+    className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+  >
+    Contact Us
+  </button>
+</div>
+
         
+          {showForm && <conatct closeForm={closeForm} />}
 
         <div className="lg.hidden flex item-center">
           {menu ? (
@@ -93,7 +108,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              onClick={closeMenu}
+              // onClick={closeMenu}
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
               Home
@@ -133,7 +148,7 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              onClick={closeMenu}
+              // onClick={closeMenu}
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
               Blog
