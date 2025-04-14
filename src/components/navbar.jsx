@@ -23,7 +23,7 @@ const Navbar = () => {
   const closeForm = () => {
     setShowForm(false);
   }
-  
+
   return (
     <div className="fixed w-full z-10 text-white bg-backgroundColor">
       <div className="container mx-auto px-4 py-4">
@@ -90,68 +90,68 @@ const Navbar = () => {
               Contact Us
             </button>
           </div>
-        
+
           {showForm && <Contact closeForm={closeForm} />}
 
-        <div className="lg.hidden flex item-center">
-          {menu ? (
-            <AiOutlineClose size={28} onClick={handleChange}/> 
-          ): (
-            <AiOutlineMenu size={28} onClick={handleChange} />
-          )}
+          <div className="lg:hidden flex items-center">
+            {menu ? (
+              <AiOutlineClose size={28} onClick={handleChange} />
+            ) : (
+              <AiOutlineMenu size={28} onClick={handleChange} />
+            )}
           </div>
-          </div>
+        </div>
 
-          <div className={`${menu ? "translate-x-0" : "translate-x-full"} lg:hidden flex flex-col absolute bg-backgroundColor text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
-            <Link
-              to="home"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Home
-            </Link>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              onClick={closeMenu}
-              className="hover:text-hoverColor transition-all cursor-pointer"
-            >
-              About
-            </Link>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              onClick={closeMenu}
-              className="hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Services
-            </Link>
-            <Link
-              to="doctors"
-              spy={true}
-              smooth={true}
-              duration={500}
-              onClick={closeMenu}
-              className="hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Doctors
-            </Link>
-            <Link
-              to="blog"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className="hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Blog
+        <div className={`${menu ? "translate-x-0" : "translate-x-full"} lg:hidden flex flex-col absolute bg-backgroundColor text-white left-0 top-16 font-semibold text-2xl text-center pt-8 pb-4 gap-8 w-full h-fit transition-transform duration-300`}>
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="hover:text-hoverColor transition-all cursor-pointer"
+          >
+            Home
           </Link>
-          </div>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            className="hover:text-hoverColor transition-all cursor-pointer"
+          >
+            About
+          </Link>
+          <Link
+            to="services"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            className="hover:text-hoverColor transition-all cursor-pointer"
+          >
+            Services
+          </Link>
+          <Link
+            to="doctors"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            className="hover:text-hoverColor transition-all cursor-pointer"
+          >
+            Doctors
+          </Link>
+          <Link
+            to="blog"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="hover:text-hoverColor transition-all cursor-pointer"
+          >
+            Blog
+          </Link>
+        </div>
       </div>
     </div>
   );
