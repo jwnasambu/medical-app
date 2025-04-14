@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import Contact from './models/contact';
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -82,16 +83,15 @@ const Navbar = () => {
           </nav>
 
           <div className="hidden lg:flex">
-  <button
-    onClick={openForm}
-    className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
-  >
-    Contact Us
-  </button>
-</div>
-
+            <button
+              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
+              onClick={openForm}
+            >
+              Contact Us
+            </button>
+          </div>
         
-          {showForm && <conatct closeForm={closeForm} />}
+          {showForm && <Contact closeForm={closeForm} />}
 
         <div className="lg.hidden flex item-center">
           {menu ? (
@@ -108,7 +108,6 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              // onClick={closeMenu}
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
               Home
@@ -148,18 +147,10 @@ const Navbar = () => {
               spy={true}
               smooth={true}
               duration={500}
-              // onClick={closeMenu}
               className="hover:text-hoverColor transition-all cursor-pointer"
             >
               Blog
           </Link>
-          <div className="lg.hidden">
-            <button className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out">
-              onClick={openForm}
-              &gt;
-              Contact Us
-            </button>
-            </div>
           </div>
       </div>
     </div>
