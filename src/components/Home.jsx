@@ -3,7 +3,7 @@ import Button from '../layouts/Button';
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-no-repeat bg-cover bg-center bg-[url('assets/img/home.png')] px-5 lg:px-32 text-white">
+    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 text-white bg-[url('assets/home.jpg')]">
       <div className="bg-green-100 bg-opacity-60 p-8 rounded-xl w-full lg:w-4/5 space-y-6 mt-10">
         <h1 className="text-4xl md:text-5xl font-bold leading-tight">
           Empowering Health Choices for a Vibrant Life — Your Trusted Partner
