@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import Contact from './models/contact';
+import Contact from "./../models/contact";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
