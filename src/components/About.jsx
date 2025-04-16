@@ -1,11 +1,12 @@
 import React from 'react';
-import aboutUs from "../assets/aboutUs.jpg";
+import home from "../assets/home.jpg";
 
 const About = () => {
   return (
-    <div className='min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 lg:pt-16 gap-5'>
+    <div className='min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-2 px-55 lg:pt-16 gap-5'>
       <div className='w-full lg:w-3/4 space-y-4'>
-        <h1 className='text-4xl font-semibold text-center lg:text-start'>About Us</h1>
+        <h1 className="text-4xl font-semibold text-center lg:text-start ">About Us</h1>
+
         <p className='text-justify lg:text-start'>
           At Wellbeing, your health and well-being are our top priorities.
           We are committed to providing compassionate, high-quality care through our team of skilled professionals,
@@ -20,7 +21,12 @@ const About = () => {
         </p>
       </div>
       <div>
-        <img src={aboutUs} alt="About Wellbeing Health Facility" className="rounded-lg shadow-lg" />
+        <img
+  src={home}
+  alt="About Wellbeing Health Facility"
+  className="rounded-lg shadow-lg h-65 object-cover"
+/>
+
       </div>
     </div>
   );
