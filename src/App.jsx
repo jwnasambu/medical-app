@@ -21,7 +21,7 @@ const App = () => {
            <Services />
         </div>
 
-        <div id="doctor">
+        <div id="doctors">
            <Doctors />
         </div>
       </main>
