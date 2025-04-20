@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full z-10 text-white bg-backgroundColor">
       <div className="container mx-auto px-4 py-4">
-        <div className="flex flex-row justify-between items-center p-5 md:px-32">
+        <div className="flex flex-row justify-between md:px-32 p-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
           <div className="flex flex-row items-center cursor-pointer">
             <Link to="home" spy={true} smooth={true} duration={500}>
               <h1 className="text-2xl font-semibold">WellnessVistae</h1>
