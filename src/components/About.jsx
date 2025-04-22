@@ -1,32 +1,32 @@
-import React from 'react';
-import home from "../assets/home.jpg";
+import React from "react";
+import img from "../assets/img/about.jpg";
 
 const About = () => {
   return (
-    <div className='min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-2 px-55 lg:pt-16 gap-5'>
-      <div className='w-full lg:w-3/4 space-y-4'>
-        <h1 className="text-4xl font-semibold text-center lg:text-start ">About Us</h1>
-
-        <p className='text-justify lg:text-start'>
-          At Wellbeing, your health and well-being are our top priorities.
-          We are committed to providing compassionate, high-quality care through our team of skilled professionals,
-          modern equipment, and patient-centered services. Whether you need routine check-ups, urgent care, or
-          specialized treatment, we’re here for you — every step of the way. Your journey to better health starts with us.
+    <div className=" min-h-screen flex flex-col lg:flex-row justify-between items-center lg:px-32 px-5 pt-24 lg:pt-16 gap-5">
+      <div className=" w-full lg:w-3/4 space-y-4">
+        <h1 className=" text-4xl font-semibold text-center lg:text-start">About Us</h1>
+        <p className=" text-justify lg:text-start">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam
+          labore rerum tempore tenetur commodi natus quos itaque voluptatum
+          repudiandae nostrum accusantium vero voluptate aspernatur totam,
+          laboriosam aut, et quae consequatur?
         </p>
-        <p className='text-justify lg:text-start'>
-          📍 Visit us at: <strong>Kitale town</strong><br />
-          📞 Call us at: <strong>+254 706 087 349</strong><br />
-          🌐 Learn more at: <strong>[Your Website]</strong><br />
-          <span>Your health. Our mission. 💚</span>
+        <p className="text-justify lg:text-start">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora quia
+          suscipit illum, numquam incidunt nostrum dolor officia doloremque
+          cupiditate, placeat explicabo sed iure atque neque quidem ipsam!
+          Dolor, minus reiciendis.
+        </p>
+        <p className="text-justify lg:text-start">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, illum.
+          Accusantium ab expedita veniam nobis aut, in rerum repellendus!
+          Exercitationem libero recusandae corrupti accusantium reiciendis in
+          placeat illo maxime ea.
         </p>
       </div>
-      <div>
-        <img
-  src={home}
-  alt="About Wellbeing Health Facility"
-  className="rounded-lg shadow-lg h-65 object-cover"
-/>
-
+      <div className=" w-full lg:w-3/4">
+        <img className=" rounded-lg" src={img} alt="img" />
       </div>
     </div>
   );

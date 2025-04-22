@@ -1,19 +1,20 @@
-import React from 'react';
-import Button from '../layouts/Button';
+import React from "react";
+import Button from "../layouts/Button";
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col justify-center lg:px-32 px-5 text-white bg-[url('assets/home.jpg')]">
-      <div className="bg-green-100 bg-opacity-60 p-8 rounded-xl w-full lg:w-4/5 space-y-6 mt-10">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-          Empowering Health Choices for a Vibrant Life — Your Trusted Partner
+    <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 text-white bg-[url('assets/img/home.png')] bg-no-repeat bg-cover opacity-90">
+      <div className=" w-full lg:w-4/5 space-y-5 mt-10">
+        <h1 className="text-5xl font-bold leading-tight">
+          Empowering Health Choices for a Vibrant Life Your Trusted..
         </h1>
-        <p className="text-lg max-w-3xl">
-          At the heart of everything we do is a commitment to helping you make informed decisions that lead to a healthier,
-          more fulfilling life. Whether you're exploring preventative care, managing chronic conditions,
-          or simply striving for everyday well-being, we're here to support you every step of the way—with compassion,
-          integrity, and expert guidance.
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam magnam
+          omnis natus accusantium quos. Reprehenderit incidunt expedita
+          molestiae impedit at sequi dolorem iste sit culpa, optio voluptates
+          fugiat vero consequatur?
         </p>
+
         <Button title="See Services" />
       </div>
     </div>
