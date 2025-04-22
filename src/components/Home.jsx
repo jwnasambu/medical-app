@@ -17,14 +17,15 @@ const Home = () => {
     >
       <div className="w-full lg:w-4/5 space-y-5 mt-10">
         <h1 className="text-5xl font-bold leading-tight">
-          Empowering Health Choices for a Vibrant Life — Your Trusted Partner.
+        Your health, your life, your choices always in your hands.
         </h1>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Quam magnam omnis natus accusantium quos. Reprehenderit 
-          incidunt expedita molestiae impedit at sequi dolorem iste 
-          sit culpa, optio voluptates fugiat vero consequatur?
+          At the heart of our mission is the belief that every individual
+          deserves the opportunity to make informed health choices.
+          Our goal is to simplify this process by offering personalized guidance tailored to your unique needs.
+          Whether you’re managing chronic conditions, exploring preventive care options, or making lifestyle changes,
+          we are here to support you with tools, resources, and expertise that you can trust.
         </p>
 
         <Button title="See Services" />

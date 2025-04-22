@@ -13,7 +13,6 @@ const Services = () => {
 
   return (
     <div className="min-h-screen flex flex-col justify-center px-5 pt-24 lg:px-32 lg:pt-16">
-      {/* Header Section */}
       <div className="flex flex-col items-center justify-between lg:flex-row">
         <div>
           <h1 className="text-4xl font-semibold text-center lg:text-start">
@@ -28,7 +27,6 @@ const Services = () => {
         </div>
       </div>
 
-      {/* Services Cards */}
       <div className="flex flex-col gap-5 pt-14 lg:flex-row">
         <ServicesCard icon={icon1} title="Lab Test" />
         <ServicesCard icon={icon2} title="Health Check" />
