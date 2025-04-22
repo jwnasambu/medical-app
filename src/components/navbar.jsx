@@ -19,14 +19,12 @@ const Navbar = () => {
     <div className="fixed w-full z-10 text-white">
       <div className="flex justify-between items-center p-5 md:px-32 px-5 bg-backgroundColor shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]">
         
-        {/* Logo */}
         <div className="cursor-pointer">
           <Link to="home" spy={true} smooth={true} duration={500}>
-            <h1 className="text-2xl font-semibold">WellnessVista.</h1>
+            <h1 className="text-2xl font-semibold">St. Julian clinic.</h1>
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-8 text-lg font-medium">
           {["home", "about", "services", "doctors", "blog"].map((section) => (
             <Link
@@ -42,7 +40,6 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Desktop Contact Button */}
         <div className="hidden lg:flex">
           <button
             onClick={openForm}
@@ -52,7 +49,6 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu Toggle */}
         <div className="lg:hidden flex items-center">
           {menu ? (
             <AiOutlineClose size={28} onClick={toggleMenu} />
@@ -62,7 +58,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`${
           menu ? "translate-x-0" : "-translate-x-full"
@@ -82,7 +77,6 @@ const Navbar = () => {
           </Link>
         ))}
 
-        {/* Mobile Contact Button */}
         <button
           onClick={openForm}
           className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out"
@@ -91,7 +85,6 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Contact Form */}
       {showForm && <Contact closeForm={closeForm} />}
     </div>
   );
