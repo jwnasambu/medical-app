@@ -10,30 +10,37 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <div>
+      {/* Navbar Component */}
       <Navbar />
 
       <main>
-        <div id="home">
+        {/* Home Section */}
+        <section id="home">
           <Home />
-        </div>
+        </section>
 
-        <div id="about">
+        {/* About Section */}
+        <section id="about">
           <About />
-        </div>
+        </section>
 
-        <div id="services">
+        {/* Services Section */}
+        <section id="services">
           <Services />
-        </div>
+        </section>
 
-        <div id="doctors">
+        {/* Doctors Section */}
+        <section id="doctors">
           <Doctors />
-        </div>
+        </section>
 
-        <div id="blog">
+        {/* Blog Section */}
+        <section id="blog">
           <Blogs />
-        </div>
+        </section>
       </main>
 
+      {/* Footer Component */}
       <Footer />
     </div>
   );

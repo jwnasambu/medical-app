@@ -3,85 +3,61 @@ import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
-    <div className=" bg-backgroundColor text-white rounded-t-3xl mt-8 md:mt-0">
-      <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5">
-        <div className=" w-full md:w-1/4">
-          <h1 className=" font-semibold text-xl pb-4">WellnessVista</h1>
-          <p className=" text-sm">
-            Our team of dedicated doctors, each specializing in unique fields
-            such as orthopedics, cardiology, pediatrics, neurology, dermatology,
-            and more.
+    <footer className="bg-backgroundColor text-white rounded-t-3xl mt-8 md:mt-0">
+      <div className="flex flex-col md:flex-row justify-between p-8 md:px-32 px-5 space-y-8 md:space-y-0">
+        {/* About the Brand */}
+        <div className="w-full md:w-1/4">
+          <h1 className="text-xl font-semibold pb-4">WellnessVista</h1>
+          <p className="text-sm">
+            Our team of dedicated doctors specializes in orthopedics, cardiology,
+            pediatrics, neurology, dermatology, and more.
           </p>
         </div>
+
+        {/* About Us Links */}
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">About Us</h1>
-          <nav className=" flex flex-col gap-2">
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              About
-            </Link>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Services
-            </Link>
-            <Link
-              to="doctors"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Doctors
-            </Link>
+          <h1 className="text-xl font-medium pb-4 pt-5 md:pt-0">About Us</h1>
+          <nav className="flex flex-col gap-2">
+            {["about", "services", "doctors"].map((section) => (
+              <Link
+                key={section}
+                to={section}
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="hover:text-hoverColor transition-all cursor-pointer"
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            ))}
           </nav>
         </div>
+
+        {/* Services Links */}
         <div>
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Services</h1>
-          <nav className=" flex flex-col gap-2">
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Lab Test
-            </Link>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Health Check
-            </Link>
-            <Link
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={500}
-              className=" hover:text-hoverColor transition-all cursor-pointer"
-            >
-              Heart Health
-            </Link>
+          <h1 className="text-xl font-medium pb-4 pt-5 md:pt-0">Services</h1>
+          <nav className="flex flex-col gap-2">
+            {["Lab Test", "Health Check", "Heart Health"].map((service) => (
+              <Link
+                key={service}
+                to="services"
+                spy={true}
+                smooth={true}
+                duration={500}
+                className="hover:text-hoverColor transition-all cursor-pointer"
+              >
+                {service}
+              </Link>
+            ))}
           </nav>
         </div>
-        <div className=" w-full md:w-1/4">
-          <h1 className=" font-medium text-xl pb-4 pt-5 md:pt-0">Contact Us</h1>
-          <nav className=" flex flex-col gap-2">
+
+        {/* Contact Info */}
+        <div className="w-full md:w-1/4">
+          <h1 className="text-xl font-medium pb-4 pt-5 md:pt-0">Contact Us</h1>
+          <nav className="flex flex-col gap-2 text-sm">
             <Link to="/" spy={true} smooth={true} duration={500}>
-              123 Elm Street, Suite 456 Springfield, IL 62701 United States
+              123 Elm Street, Suite 456<br />Springfield, IL 62701, USA
             </Link>
             <Link to="/" spy={true} smooth={true} duration={500}>
               support@care.com
@@ -92,14 +68,13 @@ const Footer = () => {
           </nav>
         </div>
       </div>
-      <div>
-        <p className=" text-center py-4">
-          @copyright developed by
-          <span className=" text-hoverColor"> champion programmers</span> | All
-          rights reserved
-        </p>
+
+      {/* Footer Bottom */}
+      <div className="text-center py-4 text-sm border-t border-white/20">
+        © Developed by
+        <span className="text-hoverColor font-medium"> Champion Programmers</span> | All rights reserved
       </div>
-    </div>
+    </footer>
   );
 };
 
