@@ -24,6 +24,10 @@ const App = () => {
         <div id="doctors">
            <Doctors />
         </div>
+
+         <div id="blogs">
+           <Blogs />
+        </div>
       </main>
     </>
   );
